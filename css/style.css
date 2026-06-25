@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_28pt-ExtraBold.ttf') ;
+   font-weight: 800;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_28pt-Bold.ttf') ;
+   font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_28pt-Regular.ttf') ;
+   font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_28pt-Thin.ttf') ;
+   font-weight: 100;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_24pt-ExtraBold.ttf') ;
+   font-weight: 800;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_24pt-Bold.ttf') ;
+   font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_24pt-Regular.ttf') ;
+   font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_24pt-Thin.ttf') ;
+   font-weight: 100;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-ExtraBold.ttf') ;
+   font-weight: 800;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Bold.ttf') ;
+   font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Regular.ttf') ;
+   font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Thin.ttf') ;
+   font-weight: 100;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+}
+span{
+    display: block;
+}
+.orange{
+    color: #E4550C;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background-color: #E4550C;
+}
+.navbar-brand:hover{
+    color: #E4550C;
+}
+.orangebg{
+    background-color: #E4550C;
+    border: #E4550C;
+}
+.navbar .orangebtn{
+    padding: 12px 32px;
+    font-weight: 500;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.navbar .orangebtn:hover ,.main #hero .container-fluid .right .btns .orangebtn:hover{
+ box-shadow:1px 5px 5px #e4540c77;
+}
+.navbar .btn{
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.navbar .btn:hover{
+   color: #E4550C;
+}
+.navbar .nav-link{
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.navbar .nav-link:hover{
+   color: #E4550C;
+}
+.nav-item .my-home{
+    color: #E4550C !important;
+}
+
+.main #hero{
+    background-color: #FFFDFB;
+}
+.main #hero .container-fluid .right .badge{
+    background-color:#FAF5EF;
+    font-size: 14px;
+    line-height: 20px;
+}
+.orange1{
+color: #D84D0C;
+}
+.orange2{
+color: #7C2D12;
+}
+.orange3{
+color: #FB8F3A;
+}
+
+.main #hero .container-fluid .right h1{
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 900;
+}
+.main #hero .container-fluid .right p{
+    font-size: 20px;
+    line-height: 33px;
+}
+.main #hero .container-fluid .right .btns{
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 600;
+}
+.main #hero .container-fluid .right .btns .btn,.main #hero .container-fluid .right .btns .orangebtn{
+   transition: all 0.3s;
+}
+.main #hero .container-fluid .right .btns .btn:hover{
+    color: #E4550C;
+    border-color: #E4550C !important;
+}
+.main #hero .container-fluid .right h5{
+    font-size: 30px;
+    line-height: 36px;
+}
+.main #hero .container-fluid .left .code{
+    top: -24px;
+    right: -24px;
+    padding: 32px;
+}
+.main #hero .container-fluid .left .mobile{
+    bottom: -24px;
+    left:-24px;
+}
+.main #hero .container-fluid .left .back{
+    rotate: 3deg;
+   background-color:#F9DBCA;
+    inset: 0;
+}
