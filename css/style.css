@@ -133,7 +133,7 @@ span{
 .main #hero{
     background-color: #FFFDFB;
 }
-.main #hero .container-fluid .right .badge ,.main #Solutions .container-fluid header .badge, .main #Technology .container header .badge ,.main #Testimonials .container header .badge ,.main #Testimonials .container .carousel-item .rounded-pill{
+.main #hero .container-fluid .right .badge ,.main #Solutions .container-fluid header .badge, .main #Technology .container header .badge ,.main #Testimonials .container header .badge ,.main #Testimonials .container .carousel-item .rounded-pill,.main #FAQ .container .rounded-pill,.main #Contact .container .rounded-pill{
     background-color:#fbefe2;
     font-size: 14px;
     line-height: 20px;
@@ -189,19 +189,19 @@ color: #FB8F3A;
    background-color:#F9DBCA;
     inset: 0;
 }
-.main #Solutions .container-fluid header h2 ,.main #Technology .container header h2,.main #Testimonials .container header h2{
+.main #Solutions .container-fluid header h2 ,.main #Technology .container header h2,.main #Testimonials .container header h2,.main #FAQ .container header h2{
     font-size: 48px;
     line-height: 48px;
     font-weight: 900;
 }
 .orange1-gradient-text {
-    background: linear-gradient(45deg, #7C2D12, #E4550C);
+    background: linear-gradient(45deg, #E4550C, #F78D39);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent; 
 }
-.main #Solutions .container-fluid header p, .main #Technology .container header p, .main #Testimonials .container header p{
+.main #Solutions .container-fluid header p, .main #Technology .container header p, .main #Testimonials .container header p,.main #FAQ .container header p{
     font-size: 20px;
     line-height: 28px;
 }
@@ -255,6 +255,9 @@ padding: 20px 18px;
     width: 64px;
     height: 64px;
 }
+.main #Testimonials{
+    background-color:#FFF7EE
+}
 .main #Testimonials .container .profile{
     width: 100px;
     height: 100px;
@@ -273,8 +276,31 @@ padding: 20px 18px;
 
 .main #Testimonials .container .inner:hover .upper .right .badge{
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.main #FAQ .container .accordion .accordion-item{
+    transition: all 0.3s;
+}
+.main #FAQ .container .accordion .accordion-item:hover{
+    border-color: #f5d6ca !important;
+}
+.main #FAQ .container .accordion-button{
+    background-color: #FFFFFF;
+    color: #7C2D12;
+    --bs-accordion-btn-focus-box-shadow: none ;
+}
+.main #FAQ .container .accordion-button::after{
+   --bs-accordion-btn-icon-width:16px;
+   --bs-accordion-btn-icon-height:16px;
+  background-color: #f5d6ca;
+  border-radius: 50%;
+}
+
+.main #Contact .container h2{
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 900;
 }
