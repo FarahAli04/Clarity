@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/media.css">
 
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-smooth-scroll="true" class="bg-light">
+        <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid mx-4 p-2">
                 <a
                     class="navbar-brand d-flex align-items-center orange fw-bold fs-4">
@@ -33,42 +34,102 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ps-2">
-                            <a class="nav-link active my-home"
+                            <a class="nav-link active my-home hover-underline-animation"
                                 aria-current="page" href="#hero">Home</a>
                         </li>
-                        <li class="nav-item dropdown ps-2 ">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Services
-                            </a>
-                            <div>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="#Services">Web
-                                            Development</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="#Services">Mobile
-                                            Apps</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="#Services">UI/UX
-                                            Design</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                       <li class="nav-item dropdown">
+            <a class="nav-link fw-medium dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Services</a>
+            <div class="dropdown-menu mega-menu shadow-lg">
+              <div class="mega-columns">
+                <div class="mega-col">
+                  <h6 class="text-uppercase text-primary fw-bold small mb-3">Development</h6>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3">
+                    <span class="mega-icon"><i class="fa-solid fa-code text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">Web Development</span>
+                      <span class="d-block small text-muted">Custom web applications &amp; websites</span>
+                    </span>
+                  </a>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3">
+                    <span class="mega-icon"><i class="fa-solid fa-mobile text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">Mobile Apps</span>
+                      <span class="d-block small text-muted">iOS &amp; Android native apps</span>
+                    </span>
+                  </a>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3">
+                    <span class="mega-icon"><i class="fa-solid fa-palette text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">UI/UX Design</span>
+                      <span class="d-block small text-muted">User-centered design solutions</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-col">
+                  <h6 class="text-uppercase text-primary fw-bold small mb-3">Infrastructure &amp; AI</h6>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3">
+                    <span class="mega-icon"><i class="fa-solid fa-cloud text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">Cloud Solutions</span>
+                      <span class="d-block small text-muted">Scalable cloud infrastructure</span>
+                    </span>
+                  </a>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3">
+                    <span class="mega-icon"><i class="fa-solid fa-brain text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">AI &amp; Machine Learning</span>
+                      <span class="d-block small text-muted">Intelligent automation solutions</span>
+                    </span>
+                  </a>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3">
+                    <span class="mega-icon"><i class="fa-solid fa-database text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">Data Solutions</span>
+                      <span class="d-block small text-muted">Database &amp; analytics platforms</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="mega-col">
+                  <h6 class="text-uppercase text-primary fw-bold small mb-3">Marketing</h6>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3 mb-2">
+                    <span class="mega-icon"><i class="fa-solid fa-chart-line text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">Digital Marketing</span>
+                      <span class="d-block small text-muted">SEO, SEM &amp; social media</span>
+                    </span>
+                  </a>
+                  <a href="#" class="mega-link text-decoration-none align-items-start gap-3 mb-3">
+                    <span class="mega-icon"><i class="fa-solid fa-bullhorn text-primary"></i></span>
+                    <span>
+                      <span class="d-block fw-semibold text-dark">Content Strategy</span>
+                      <span class="d-block small text-muted">Engaging content creation</span>
+                    </span>
+                  </a>
+                  <div class="mega-cta">
+                    <h6 class="fw-bold mb-2">Need help choosing?</h6>
+                    <p class="small text-muted mb-2">Talk to our experts to find the perfect solution for your business.
+                    </p>
+                    <a href="#Contact" class="link-arrow small orange">Contact us <i
+                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
                         <li class="nav-item ps-2">
-                            <a class="nav-link "
+                            <a class="nav-link  hover-underline-animation"
                                 href="#Technology">Technology</a>
                         </li>
                         <li class="nav-item ps-2">
-                            <a class="nav-link "
+                            <a class="nav-link  hover-underline-animation"
                                 href="#Testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item ps-2">
-                            <a class="nav-link " href="#FAQ">FAQ</a>
+                            <a class="nav-link  hover-underline-animation" href="#FAQ">FAQ</a>
                         </li>
                         <li class="nav-item ps-2">
-                            <a class="nav-link " href="#Contact">Contact</a>
+                            <a class="nav-link  hover-underline-animation" href="#Contact">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex gap-2">
@@ -81,64 +142,49 @@
             </div>
         </nav>
         <div class="main">
-            <section id="hero" class="my-5 py-5">
-                <div
-                    class="container-fluid d-flex align-items-center justify-content-between px-5">
-                    <div class="right">
-                        <span
-                            class="badge rounded-pill orange fw-medium py-2 px-3"><i
-                                class="fa-solid fa-rocket me-2"></i>Transforming
-                            Digital Experiences</span>
-                        <h1 class="my-3">
-                            <span class="orange1-gradient-text">
-                                Digital Solutions
+                <section id="hero" class="my-5 py-5">
+                <div class="container-fluid px-3 px-lg-5">
+                    <div class="row align-items-center g-5">
+
+                        <div class="col-12 col-lg-7 right">
+                            <span class="badge rounded-pill orange fw-medium py-2 px-3 mb-4">
+                                <i class="fa-solid fa-rocket me-2"></i>Transforming Digital Experiences
                             </span>
-                            <span class="orange2">
-                                That Drive
-                            </span>
-                            <span class="orange3">
-                                Growth
-                            </span>
-                        </h1>
-                        <p class="text-secondary">We craft innovative digital
-                            experiences that transform businesses and accelerate
-                            growth. From cutting-edge web applications to mobile
-                            solutions, we deliver technology that makes a
-                            difference.</p>
-                        <div class="btns d-flex gap-4 mt-4">
-                            <button
-                                class="orangebg text-white rounded-5 fs-6 orangebtn px-5 py-3">Start
-                                Your Project <i
-                                    class="fa-solid fa-arrow-right"></i></button>
-                            <button
-                                class="btn border border-3 rounded-5 px-5 py-3"><i
-                                    class="fa-solid fa-play pe-4"></i>Watch
-                                Demo</button>
+                            <h1 class="my-3">
+                                <span class="orange1-gradient-text d-block">Digital Solutions</span>
+                                <span class="orange2 d-block">That Drive</span>
+                                <span class="orange3 d-block">Growth</span>
+                            </h1>
+                            <p class="text-secondary">We craft innovative digital experiences that transform businesses and accelerate growth. From cutting-edge web applications to mobile solutions, we deliver technology that makes a difference.</p>
+                            <div class="btns d-flex flex-column flex-sm-row gap-3 mt-4">
+                                <button class="orangebg text-white rounded-5 fs-6 orangebtn px-4 py-3">
+                                    Start Your Project <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </button>
+                                <button class="btn border border-3 rounded-5 px-4 py-3">
+                                    <i class="fa-solid fa-play me-2"></i>Watch Demo
+                                </button>
+                            </div>
+                            <div class="d-flex flex-wrap text-center mt-5 gap-4 gap-lg-5">
+                                <div><h5 class="orange mb-0 fw-bold">500+</h5><span class="text-secondary">Projects Delivered</span></div>
+                                <div><h5 class="orange mb-0 fw-bold">98%</h5><span class="text-secondary">Client Satisfaction</span></div>
+                                <div><h5 class="orange mb-0 fw-bold">24/7</h5><span class="text-secondary">Support</span></div>
+                            </div>
                         </div>
-                        <div class="d-flex text-center mt-5 gap-4">
-                            <div><h5 class="orange mb-0 fw-bold">500+</h5><span
-                                    class="text-secondary">Projects
-                                    Delivered</span></div>
-                            <div><h5 class="orange mb-0 fw-bold">98%</h5><span
-                                    class="text-secondary">Client
-                                    Satisfaction</span></div>
-                            <div><h5 class="orange mb-0 fw-bold">24/7</h5><span
-                                    class="text-secondary">Support</span></div>
+                        <div class="col-12 col-lg-5 left d-flex justify-content-center">
+                            <div class="position-relative hero-image-wrap">
+                                <div class="position-absolute rounded-4 back"></div>
+                                <figure class="p-4 rounded-4 position-relative shadow-lg bg-white mb-0">
+                                    <span class="badge orangebg position-absolute rounded-4 code bg-gradient">
+                                        <i class="fa-solid fa-code fs-4"></i>
+                                    </span>
+                                    <img src="images/hero-img-sGwnWbTh.png" alt="hero-img" class="w-100 rounded-4">
+                                    <span class="badge orangebg position-absolute p-4 rounded-4 mobile bg-gradient">
+                                        <i class="fa-solid fa-mobile fs-5"></i>
+                                    </span>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                    <div class="left position-relative">
-                        <div class="position-absolute rounded-4 back"></div>
-                        <figure
-                            class="p-4 rounded-4 position-relative shadow-lg bg-white order-5">
-                            <span
-                                class="badge orangebg position-absolute rounded-4 code bg-gradient"><i
-                                    class="fa-solid fa-code fs-4"></i></span>
-                            <img src="images/hero-img-sGwnWbTh.png"
-                                alt="hero-img" class="w-100 rounded-4">
-                            <span
-                                class="badge orangebg position-absolute p-4 rounded-4 mobile bg-gradient"><i
-                                    class="fa-solid fa-mobile fs-5"></i></span>
-                        </figure>
+
                     </div>
                 </div>
             </section>
@@ -358,7 +404,7 @@
                     </div>
                 </div>
             </section>
-            <section id="Technology" class="mt-5 pt-5">
+         <section id="Technology" class="mt-5 pt-5">
                 <div class="container">
                     <header
                         class="d-flex text-center flex-column align-items-center mb-5 justify-content-center">
@@ -374,60 +420,64 @@
                             technologies and frameworks to build scalable,
                             secure, and high-performance solutions.</p>
                     </header>
-                    <ul class="nav nav-pills mb-3 justify-content-center"
+                    <ul class="nav tech-tabs mb-3 justify-content-center border-bottom"
                         id="pills-tab"
                         role="tablist">
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link active text-secondary text-bg-light font18x28x600 me-4"
+                                class="tech-tab-btn active font18x28x600 me-4"
                                 id="pills-Frontend-tab"
                                 data-bs-toggle="pill"
                                 data-bs-target="#pills-Frontend" type="button"
                                 role="tab" aria-controls="pills-Frontend"
-                                aria-selected="true"><i
-                                    class="fa-solid fa-code me-2"></i>Frontend</button>
+                                aria-selected="true">
+                                <i class="fa-solid fa-code me-2"></i>Frontend
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link text-secondary text-bg-light font18x28x600 mx-4"
+                                class="tech-tab-btn font18x28x600 mx-4"
                                 id="pills-Backend-tab"
                                 data-bs-toggle="pill"
                                 data-bs-target="#pills-Backend" type="button"
                                 role="tab" aria-controls="pills-Backend"
-                                aria-selected="false"><li
-                                    class="fa-solid fa-server me-2"></li>Backend</button>
+                                aria-selected="false">
+                                <i class="fa-solid fa-server me-2"></i>Backend
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link text-secondary text-bg-light font18x28x600 mx-4"
+                                class="tech-tab-btn font18x28x600 mx-4"
                                 id="pills-Mobile-tab"
                                 data-bs-toggle="pill"
                                 data-bs-target="#pills-Mobile" type="button"
                                 role="tab" aria-controls="pills-Mobile"
-                                aria-selected="false"><li
-                                    class="fa-solid fa-mobile me-2"></li>Mobile</button>
+                                aria-selected="false">
+                                <i class="fa-solid fa-mobile me-2"></i>Mobile
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link text-secondary text-bg-light font18x28x600 mx-4"
+                                class="tech-tab-btn font18x28x600 mx-4"
                                 id="pills-Cloud&DevOps-tab"
                                 data-bs-toggle="pill"
                                 data-bs-target="#pills-Cloud&DevOps"
                                 type="button"
                                 role="tab" aria-controls="pills-Cloud&DevOps"
-                                aria-selected="false"><li
-                                    class="fa-solid fa-cloud me-2"></li>Cloud &
-                                DevOps</button>
+                                aria-selected="false">
+                                <i class="fa-solid fa-cloud me-2"></i>Cloud &amp; DevOps
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button
-                                class="nav-link text-secondary text-bg-light font18x28x600 mx-4"
+                                class="tech-tab-btn font18x28x600 mx-4"
                                 id="pills-Database-tab"
                                 data-bs-toggle="pill"
                                 data-bs-target="#pills-Database" type="button"
                                 role="tab" aria-controls="pills-Database"
-                                aria-selected="false"><li
-                                    class="fa-solid fa-database me-2"></li>Database</button>
+                                aria-selected="false">
+                                <i class="fa-solid fa-database me-2"></i>Database
+                            </button>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
@@ -1200,265 +1250,233 @@
             </section>
             <section id="Testimonials">
                 <div class="container py-5 g-0">
-                    <header
-                        class="d-flex text-center flex-column align-items-center mb-5 justify-content-center">
-                        <span
-                            class="badge rounded-pill orange fw-medium py-2 px-3"><i
-                                class="fa-solid fa-heart me-2"></i>Client
-                            Testimonials</span>
-                        <h2 class="my-4"><span
-                                class="orange2 d-inline">What Our
-                            </span><span class="d-inline orange1">
-                                Clients Say</span></h2>
-                        <p class="text-secondary w-50">Don't just take our word
-                            for it. Here's what our clients have to say about
-                            working with us.</p>
+                    <header class="d-flex text-center flex-column align-items-center mb-5 justify-content-center">
+                        <span class="badge rounded-pill orange fw-medium py-2 px-3"><i class="fa-solid fa-heart me-2"></i>Client Testimonials</span>
+                        <h2 class="my-4"><span class="orange2 d-inline">What Our </span><span class="d-inline orange1">Clients Say</span></h2>
+                        <p class="text-secondary w-50">Don't just take our word for it. Here's what our clients have to say about working with us.</p>
                     </header>
-                    <div id="carouselExampleSlidesOnly" class="carousel slide"
-                        data-bs-ride="carousel">
+
+                    <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="inner w-75 mx-auto shadow-lg p-5 rounded-4 bg-light">
                                     <div class="upper">
-                                        <div class="d-flex justify-content-between"><div class="right d-flex align-items-center gap-4 justify-content-center"> 
-                                            <span class="badge rounded-4 code align-content-center orangebgcard"><i
-                                                    class="fa-solid fa-quote-left fs-4 orange"></i></span>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="right d-flex align-items-center gap-4 justify-content-center">
+                                                <span class="badge rounded-4 code align-content-center orangebgcard"><i class="fa-solid fa-quote-left fs-4 orange"></i></span>
                                                 <div class="d-flex flex-column">
                                                     <div>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
                                                     </div>
                                                     <span class="text-secondary">5.0 Rating</span>
                                                 </div>
-                                                </div>
-                                    <span class="badge rounded-pill orangebgcard orange align-content-center"><li class="fa-solid fa-circle-check me-1 orange"></li>Verified</span>
+                                            </div>
+                                            <span class="badge rounded-pill orangebgcard orange align-content-center"><i class="fa-solid fa-circle-check me-1 orange"></i>Verified</span>
+                                        </div>
                                     </div>
-                                    <blockquote class="blockquote text-secondary my-5">
-                                        "Clarity transformed our entire digital presence. Their team's expertise and dedication resulted in a 300% increase in our online sales. Absolutely phenomenal work!"
-                                    </blockquote>
+                                    <blockquote class="blockquote text-secondary my-5">"Clarity transformed our entire digital presence. Their team's expertise and dedication resulted in a 300% increase in our online sales. Absolutely phenomenal work!"</blockquote>
                                     <div class="lower d-flex justify-content-between align-items-center">
                                         <div class="right d-flex align-items-center gap-4 justify-content-center">
                                             <figure class="rounded-circle border border-2 p-1 border-warning-subtle profile position-relative">
-                                              <img src="images/avatar-1-CwUcGkzI.jpg" alt="avatar1-profile-photo" class="rounded-circle w-100">
-                                               <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></li>
+                                                <img src="images/avatar-1-CwUcGkzI.jpg" alt="avatar1-profile-photo" class="rounded-circle w-100">
+                                                <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></i>
                                             </figure>
-                                              <div class="d-flex flex-column ">
+                                            <div class="d-flex flex-column">
                                                 <span class="fw-bold orange">Ahmed Al-Farsi</span>
                                                 <span class="text-secondary">CEO, RetailMax</span>
-                                                <span class="text-secondary"> <li class="fa-brands fa-linkedin orange me-1"></li>Verified on LinkedIn</span>
-                                              </div>
+                                                <span class="text-secondary"><i class="fa-brands fa-linkedin orange me-1"></i>Verified on LinkedIn</span>
+                                            </div>
                                         </div>
                                         <div class="left d-flex flex-column align-items-end">
                                             <span class="fw-bold orange h3 mb-1">300%</span>
                                             <span class="text-secondary">Growth</span>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
+
+                            <div class="carousel-item">
                                 <div class="inner w-75 mx-auto p-5 rounded-4 bg-light shadow-lg">
                                     <div class="upper">
-                                        <div class="d-flex justify-content-between"><div class="right d-flex align-items-center gap-4 justify-content-center"> 
-                                            <span class="badge rounded-4 code align-content-center orangebgcard"><i
-                                                    class="fa-solid fa-quote-left fs-4 orange"></i></span>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="right d-flex align-items-center gap-4 justify-content-center">
+                                                <span class="badge rounded-4 code align-content-center orangebgcard"><i class="fa-solid fa-quote-left fs-4 orange"></i></span>
                                                 <div class="d-flex flex-column">
                                                     <div>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
                                                     </div>
                                                     <span class="text-secondary">5.0 Rating</span>
                                                 </div>
-                                                </div>
-                                    <span class="badge rounded-pill orangebgcard orange align-content-center"><li class="fa-solid fa-circle-check me-1 orange"></li>Verified</span>
+                                            </div>
+                                            <span class="badge rounded-pill orangebgcard orange align-content-center"><i class="fa-solid fa-circle-check me-1 orange"></i>Verified</span>
+                                        </div>
                                     </div>
-                                    <blockquote class="blockquote text-secondary my-5">
-                                        "The telemedicine platform they built for us has revolutionized how we serve our patients. The security, reliability, and user experience are all top-notch."
-                                    </blockquote>
+                                    <blockquote class="blockquote text-secondary my-5">"The telemedicine platform they built for us has revolutionized how we serve our patients. The security, reliability, and user experience are all top-notch."</blockquote>
                                     <div class="lower d-flex justify-content-between align-items-center">
                                         <div class="right d-flex align-items-center gap-4 justify-content-center">
                                             <figure class="rounded-circle border border-2 p-1 border-warning-subtle profile position-relative">
-                                              <img src="images/avatar-2-DvihTPKl.jpg" alt="avatar2-profile-photo" class="rounded-circle w-100">
-                                               <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></li>
+                                                <img src="images/avatar-2-DvihTPKl.jpg" alt="avatar2-profile-photo" class="rounded-circle w-100">
+                                                <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></i>
                                             </figure>
-                                              <div class="d-flex flex-column ">
+                                            <div class="d-flex flex-column">
                                                 <span class="fw-bold orange">Dr. Michael Chen</span>
                                                 <span class="text-secondary">Director, MedCare</span>
-                                                <span class="text-secondary"> <li class="fa-brands fa-linkedin orange me-1"></li>Verified on LinkedIn</span>
-                                              </div>
+                                                <span class="text-secondary"><i class="fa-brands fa-linkedin orange me-1"></i>Verified on LinkedIn</span>
+                                            </div>
                                         </div>
                                         <div class="left d-flex flex-column align-items-end">
                                             <span class="fw-bold orange h3 mb-1">100K+</span>
                                             <span class="text-secondary">Patients</span>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
+
                             <div class="carousel-item">
                                 <div class="inner w-75 mx-auto p-5 rounded-4 bg-light shadow-lg">
                                     <div class="upper">
-                                        <div class="d-flex justify-content-between"><div class="right d-flex align-items-center gap-4 justify-content-center"> 
-                                            <span class="badge rounded-4 code align-content-center orangebgcard"><i
-                                                    class="fa-solid fa-quote-left fs-4 orange"></i></span>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="right d-flex align-items-center gap-4 justify-content-center">
+                                                <span class="badge rounded-4 code align-content-center orangebgcard"><i class="fa-solid fa-quote-left fs-4 orange"></i></span>
                                                 <div class="d-flex flex-column">
                                                     <div>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
                                                     </div>
                                                     <span class="text-secondary">5.0 Rating</span>
                                                 </div>
-                                                </div>
-                                    <span class="badge rounded-pill orangebgcard orange align-content-center"><li class="fa-solid fa-circle-check me-1 orange"></li>Verified</span>
+                                            </div>
+                                            <span class="badge rounded-pill orangebgcard orange align-content-center"><i class="fa-solid fa-circle-check me-1 orange"></i>Verified</span>
+                                        </div>
                                     </div>
-                                    <blockquote class="blockquote text-secondary my-5">
-                                        "Working with Clarity was a game-changer. Their mobile banking app exceeded all our expectations and has processed over $1 billion in transactions."
-                                    </blockquote>
+                                    <blockquote class="blockquote text-secondary my-5">"Working with Clarity was a game-changer. Their mobile banking app exceeded all our expectations and has processed over $1 billion in transactions."</blockquote>
                                     <div class="lower d-flex justify-content-between align-items-center">
                                         <div class="right d-flex align-items-center gap-4 justify-content-center">
                                             <figure class="rounded-circle border border-2 p-1 border-warning-subtle profile position-relative">
-                                              <img src="images/avatar-3-MKRsHcFc.jpg" alt="avatar3-profile-photo" class="rounded-circle w-100">
-                                               <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></li>
+                                                <img src="images/avatar-3-MKRsHcFc.jpg" alt="avatar3-profile-photo" class="rounded-circle w-100">
+                                                <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></i>
                                             </figure>
-                                              <div class="d-flex flex-column ">
+                                            <div class="d-flex flex-column">
                                                 <span class="fw-bold orange">Eslam Salah</span>
                                                 <span class="text-secondary">CTO, FinanceFlow</span>
-                                                <span class="text-secondary"> <li class="fa-brands fa-linkedin orange me-1"></li>Verified on LinkedIn</span>
-                                              </div>
+                                                <span class="text-secondary"><i class="fa-brands fa-linkedin orange me-1"></i>Verified on LinkedIn</span>
+                                            </div>
                                         </div>
                                         <div class="left d-flex flex-column align-items-end">
                                             <span class="fw-bold orange h3 mb-1">$1B+</span>
                                             <span class="text-secondary">Processed</span>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
+
                             <div class="carousel-item">
                                 <div class="inner w-75 mx-auto p-5 rounded-4 bg-light shadow-lg">
                                     <div class="upper">
-                                        <div class="d-flex justify-content-between"><div class="right d-flex align-items-center gap-4 justify-content-center"> 
-                                            <span class="badge rounded-4 code align-content-center orangebgcard"><i
-                                                    class="fa-solid fa-quote-left fs-4 orange"></i></span>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="right d-flex align-items-center gap-4 justify-content-center">
+                                                <span class="badge rounded-4 code align-content-center orangebgcard"><i class="fa-solid fa-quote-left fs-4 orange"></i></span>
                                                 <div class="d-flex flex-column">
                                                     <div>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
                                                     </div>
                                                     <span class="text-secondary">5.0 Rating</span>
                                                 </div>
-                                                </div>
-                                    <span class="badge rounded-pill orangebgcard orange align-content-center"><li class="fa-solid fa-circle-check me-1 orange"></li>Verified</span>
+                                            </div>
+                                            <span class="badge rounded-pill orangebgcard orange align-content-center"><i class="fa-solid fa-circle-check me-1 orange"></i>Verified</span>
+                                        </div>
                                     </div>
-                                    <blockquote class="blockquote text-secondary my-5">
-                                        "The AI-powered analytics dashboard they created has given us insights we never had before. Our decision-making process has become so much more data-driven and effective."
-                                    </blockquote>
+                                    <blockquote class="blockquote text-secondary my-5">"The AI-powered analytics dashboard they created has given us insights we never had before. Our decision-making process has become so much more data-driven and effective."</blockquote>
                                     <div class="lower d-flex justify-content-between align-items-center">
                                         <div class="right d-flex align-items-center gap-4 justify-content-center">
                                             <figure class="rounded-circle border border-2 p-1 border-warning-subtle profile position-relative">
-                                              <img src="images/avatar-4-CDQD_dyw.jpg" alt="avatar4-profile-photo" class="rounded-circle w-100">
-                                               <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></li>
+                                                <img src="images/avatar-4-CDQD_dyw.jpg" alt="avatar4-profile-photo" class="rounded-circle w-100">
+                                                <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></i>
                                             </figure>
-                                              <div class="d-flex flex-column ">
+                                            <div class="d-flex flex-column">
                                                 <span class="fw-bold orange">James Wilson</span>
                                                 <span class="text-secondary">VP of Operations, TechCorp</span>
-                                                <span class="text-secondary"> <li class="fa-brands fa-linkedin orange me-1"></li>Verified on LinkedIn</span>
-                                              </div>
+                                                <span class="text-secondary"><i class="fa-brands fa-linkedin orange me-1"></i>Verified on LinkedIn</span>
+                                            </div>
                                         </div>
                                         <div class="left d-flex flex-column align-items-end">
                                             <span class="fw-bold orange h3 mb-1">10X</span>
                                             <span class="text-secondary">Insights</span>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
+
                             <div class="carousel-item">
                                 <div class="inner w-75 mx-auto p-5 rounded-4 bg-light shadow-lg">
                                     <div class="upper">
-                                        <div class="d-flex justify-content-between"><div class="right d-flex align-items-center gap-4 justify-content-center"> 
-                                            <span class="badge rounded-4 code align-content-center orangebgcard"><i
-                                                    class="fa-solid fa-quote-left fs-4 orange"></i></span>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="right d-flex align-items-center gap-4 justify-content-center">
+                                                <span class="badge rounded-4 code align-content-center orangebgcard"><i class="fa-solid fa-quote-left fs-4 orange"></i></span>
                                                 <div class="d-flex flex-column">
                                                     <div>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
-                                                    <li class="fa-solid fa-star text-warning me-2"></li>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
+                                                        <i class="fa-solid fa-star text-warning me-2"></i>
                                                     </div>
                                                     <span class="text-secondary">5.0 Rating</span>
                                                 </div>
-                                                </div>
-                                    <span class="badge rounded-pill orangebgcard orange align-content-center"><li class="fa-solid fa-circle-check me-1 orange"></li>Verified</span>
+                                            </div>
+                                            <span class="badge rounded-pill orangebgcard orange align-content-center"><i class="fa-solid fa-circle-check me-1 orange"></i>Verified</span>
+                                        </div>
                                     </div>
-                                    <blockquote class="blockquote text-secondary my-5">
-                                        "Their cloud migration service was flawless. Zero downtime, improved performance, and significant cost savings. The team's expertise is unmatched."
-                                    </blockquote>
-                                    <div class="lower d-flex justify-content-between align-items-center ">
+                                    <blockquote class="blockquote text-secondary my-5">"Their cloud migration service was flawless. Zero downtime, improved performance, and significant cost savings. The team's expertise is unmatched."</blockquote>
+                                    <div class="lower d-flex justify-content-between align-items-center">
                                         <div class="right d-flex align-items-center gap-4 justify-content-center">
                                             <figure class="rounded-circle border border-2 p-1 border-warning-subtle profile position-relative">
-                                              <img src="images/avatar-4-CDQD_dyw.jpg" alt="avatar4-profile-photo" class="rounded-circle w-100">
-                                               <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></li>
+                                                <img src="images/avatar-4-CDQD_dyw.jpg" alt="avatar4-profile-photo" class="rounded-circle w-100">
+                                                <li class="fa-solid fa-circle-check position-absolute orange fs-4 border border-2 border-white rounded-circle bg-white"></i>
                                             </figure>
-                                              <div class="d-flex flex-column ">
+                                            <div class="d-flex flex-column">
                                                 <span class="fw-bold orange">Omar Wael</span>
                                                 <span class="text-secondary">IT Director, GlobalTech</span>
-                                                <span class="text-secondary"> <li class="fa-brands fa-linkedin orange me-1"></li>Verified on LinkedIn</span>
-                                              </div>
+                                                <span class="text-secondary"><i class="fa-brands fa-linkedin orange me-1"></i>Verified on LinkedIn</span>
+                                            </div>
                                         </div>
                                         <div class="left d-flex flex-column align-items-end">
                                             <span class="fw-bold orange h3 mb-1">0%</span>
                                             <span class="text-secondary">Downtime</span>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                    </div>
-                     <div class="carousel-indicators">
-                            <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="0" class="active"
-                                aria-current="true"
-                                aria-label="Slide 1"></button>
-                            <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                                <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                                <button type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
+
                         </div>
+                        <div class="carousel-indicators testimonial-indicators">
+                            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+
+                    </div>
                 </div>
             </section>
-             <section id="FAQ">
+            <section id="FAQ">
                 <div class="container py-5 my-5">
                     <header
                         class="d-flex text-center flex-column align-items-center mb-5 justify-content-center">
@@ -1543,86 +1561,186 @@
 </div>
                 </div>
              </section>
-             <section id="Contact">
+              <section id="Contact">
                 <div class="container py-5 my-5">
-                     <header
-                        class="d-flex text-center flex-column align-items-center mb-5 justify-content-center">
-                        <span
-                            class="badge rounded-pill orange fw-medium py-2 px-3"><i
-                                class="fa-solid fa-rocket me-2"></i>Let's Start Your Journey</span>
-                        <h2 class="my-5"><span
-                                class="orange2">Ready to
-                            </span><span class="orange1-gradient-text">
-                                Transform?</span></h2>
+                    <header class="d-flex text-center flex-column align-items-center mb-5 justify-content-center">
+                        <span class="badge rounded-pill orange fw-medium py-2 px-3">
+                            <i class="fa-solid fa-rocket me-2"></i>Let's Start Your Journey
+                        </span>
+                        <h2 class="my-5">
+                            <span class="orange2">Ready to </span>
+                            <span class="orange1-gradient-text">Transform?</span>
+                        </h2>
                         <p class="text-secondary w-75 fs-4">Take the first step towards digital excellence. Our experts are ready to turn your vision into reality.</p>
                     </header>
-                    <div class="form-container mx-auto p-5 rounded-4 shadow-lg bg-light">
-                        <div class="row">
-                            <div class="col-8">
-                                <header>
-                                    <h4 class="fw-bold orange2">Get Your Free Consultation</h4>
-                                    <p class="text-secondary fs-5">Fill out the form and we'll get back to you within 24 hours with a personalized proposal.</p>
-                                </header>
-                                <form action="">
-                                    <div class="row mb-4">
-  <div class="col">
-    <label for="exampleFormControlInput1" class="form-label fw-bold font14x20x400">First Name *</label>
-    <input type="text" class="form-control p-3 rounded-4" placeholder="John" aria-label="First name">
-  </div>
-  <div class="col">
-    <label for="exampleFormControlInput1" class="form-label fw-bold font14x20x400">Last Name *</label>
-    <input type="text" class="form-control p-3 rounded-4" placeholder="Doe" aria-label="Last name">
-  </div>
-</div>
- <div class="row mb-4">
-  <div class="col">
-    <label for="exampleFormControlInput1" class="form-label fw-bold font14x20x400">Email Address *</label>
-    <input type="text" class="form-control p-3 rounded-4" placeholder="John@company.com" aria-label="Email">
-  </div>
-  <div class="col">
-    <label for="exampleFormControlInput1" class="form-label fw-bold font14x20x400">Company</label>
-    <input type="text" class="form-control p-3 rounded-4" placeholder="Your Company Name" aria-label="Company">
-  </div>
-</div>
- <label for="exampleFormControl" class="form-label fw-bold font14x20x400">Primary Interest</label>
-<select class="form-select p-3 rounded-4 mb-3" aria-label="Default select example">
-  <option selected>Choose your focus area</option>
-  <option value="1">Web Development & Design</option>
-  <option value="2">Mobile App Development</option>
-  <option value="3">Cloud & Infrastructure</option>
-  <option value="4">AI & Machine Learninge</option>
-  <option value="5">Digital Marketing & SEO</option>
-  <option value="6">Complete Digital Transformation</option>
-</select>
-<label for="exampleFormControl" class="form-label fw-bold font14x20x400">Timeline</label>
-<select class="form-select p-3 rounded-4 mb-4" aria-label="Default select example">
-  <option selected>When do you want to start?</option>
-  <option value="1">Immediately</option>
-  <option value="2">Within 1 month</option>
-  <option value="3">Within 3 months</option>
-  <option value="4">Within 6 months</option>
-  <option value="5">Just exploring options</option>
-</select>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label fw-bold font14x20x400">Tell us about your project</label>
-  <textarea class="form-control rounded-4 p-3" id="exampleFormControlTextarea1" placeholder="Describe your project goals, challenges, and what success looks like for you..." rows="6"></textarea>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-  <label class="form-check-label font14x20x400" for="checkDefault">
-    I agree to receive communications and accept the <span class="orange d-inline">Privacy Policy</span>
-  </label>
-</div>
-<div class="d-grid my-4">
-  <button class="btn btn-primary p-3 rounded-4 orangebg bg-gradient fs-5 fw-bolder" type="button">Get My Free Consultation <li class="fa-solid fa-arrow-right"></li></button>
-</div>
+                    <div class="rounded-4 shadow-lg overflow-hidden mx-auto">
+                        <div class="row g-0">
+                            <div class="col-lg-8 bg-light p-5">
+                                <h4 class="fw-bold orange2 mb-1">Get Your Free Consultation</h4>
+                                <p class="text-secondary fs-5 mb-4">Fill out the form and we'll get back to you within 24 hours with a personalized proposal.</p>
+
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label fw-bold font14x20x400">First Name *</label>
+                                            <input type="text" class="form-control p-3 rounded-4" placeholder="John" required>
+                                        </div>
+                                        <div class="col">
+                                            <label class="form-label fw-bold font14x20x400">Last Name *</label>
+                                            <input type="text" class="form-control p-3 rounded-4" placeholder="Doe" required>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label fw-bold font14x20x400">Email Address *</label>
+                                            <input type="email" class="form-control p-3 rounded-4" placeholder="john@company.com" required>
+                                        </div>
+                                        <div class="col">
+                                            <label class="form-label fw-bold font14x20x400">Company</label>
+                                            <input type="text" class="form-control p-3 rounded-4" placeholder="Your Company Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold font14x20x400">Primary Interest</label>
+                                        <select class="form-select p-3 rounded-4">
+                                            <option>Choose your focus area</option>
+                                            <option>Web Development &amp; Design</option>
+                                            <option>Mobile App Development</option>
+                                            <option>Cloud &amp; Infrastructure</option>
+                                            <option>AI &amp; Machine Learning</option>
+                                            <option>Digital Marketing &amp; SEO</option>
+                                            <option>Complete Digital Transformation</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold font14x20x400">Timeline</label>
+                                        <select class="form-select p-3 rounded-4">
+                                            <option>When do you want to start?</option>
+                                            <option>Immediately</option>
+                                            <option>Within 1 month</option>
+                                            <option>Within 3 months</option>
+                                            <option>Within 6 months</option>
+                                            <option>Just exploring options</option>
+                                        </select>
+                                    </div>
+
+                                      <div class="mb-3">
+                                        <label class="form-label fw-bold font14x20x400">Project Budget Range</label>
+                                        <div class="d-flex gap-3 flex-wrap">
+                                            <label class="budget-pill">
+                                                <input type="radio" name="budget" value="25k-50k" checked>
+                                                <span class="rounded-4 py-4 px-5 fw-bold">$25K – $50K <small class="d-block text-center">(Growth)</small></span>
+                                            </label>
+                                            <label class="budget-pill">
+                                                <input type="radio" name="budget" value="50k-100k">
+                                                <span class="rounded-4 py-4 px-5 fw-bold">$50K – $100K <small class="d-block text-center">(Scale)</small></span>
+                                            </label>
+                                            <label class="budget-pill">
+                                                <input type="radio" name="budget" value="100k+">
+                                                <span class="rounded-4 py-4 px-5 fw-bold">$100K+ <small class="d-block text-center">(Enterprise)</small></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold font14x20x400">Tell us about your project</label>
+                                        <textarea class="form-control rounded-4 p-3" rows="5" placeholder="Describe your project goals, challenges, and what success looks like for you..."></textarea>
+                                    </div>
+
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="privacyCheck">
+                                        <label class="form-check-label font14x20x400" for="privacyCheck">
+                                            I agree to receive communications and accept the <span class="orange d-inline fw-bold">Privacy Policy</span>
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="btn orangebg text-white w-100 p-3 rounded-4 fs-5 fw-bold" onclick="alert('Thank you for your message! We will get back to you soon')">
+                                        Get My Free Consultation <li class="fa-solid fa-arrow-right ms-2"></li>
+                                    </button>
                                 </form>
                             </div>
-                            <div class="col-4"></div>
+
+                            <div class="col-lg-4 orangebg text-white p-5">
+                                <h5 class="fw-bold mb-4">Why Choose Clarity?</h5>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <span class="contact-icon-pill rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                        <li class="fa-solid fa-clock"></li>
+                                    </span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">24-Hour Response</h6>
+                                        <p class="small mb-0 text-light" >Quick turnaround on all inquiries with detailed project analysis</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <span class="contact-icon-pill rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                        <li class="fa-solid fa-shield-alt"></li>
+                                    </span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">100% Satisfaction</h6>
+                                        <p class="small mb-0 text-light" >Money-back guarantee if you're not completely satisfied</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mb-4">
+                                    <span class="contact-icon-pill rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+                                        <li class="fa-solid fa-users"></li>
+                                    </span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Expert Team</h6>
+                                        <p class="small mb-0 text-light" >150+ certified professionals with 8+ years experience</p>
+                                    </div>
+                                </div>
+                                <hr class="bg-light">
+                                <h6 class="fw-bold mb-3">Direct Contact</h6>
+                                <div class="d-flex align-items-center gap-2 mb-2 small"><li class="fa-solid fa-phone"></li><span>+1 (555) 123-4567</span></div>
+                                <div class="d-flex align-items-center gap-2 mb-2 small"><li class="fa-solid fa-envelope"></li><span>hello@clarity.com</span></div>
+                                <div class="d-flex align-items-center gap-2 small"><li class="fa-solid fa-map-marker-alt"></li><span>San Francisco, CA</span></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-             </section>
+            </section>
+        </div>
+
+        <footer class="bg-white border-top">
+            <div class="container-fluid py-0 px-4 px-lg-5">
+                <div class="row align-items-center py-5 g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <div class="logo d-flex border rounded-4 p-2 justify-content-center align-items-center orangebg">
+                                <li class="fa-solid fa-cube text-white fs-6"></li>
+                            </div>
+                            <span class="fs-5 fw-bold orange">Clarity</span>
+                        </div>
+                        <p class="text-secondary small mb-0">Transforming businesses through innovative digital solutions and cutting-edge technology.</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-start justify-content-md-end gap-2">
+                        <a href="#" class="contact-social-icon rounded-3 d-flex align-items-center justify-content-center text-decoration-none">
+                            <li class="fa-brands fa-linkedin text-secondary "></li>
+                        </a>
+                        <a href="#" class="contact-social-icon rounded-3 d-flex align-items-center justify-content-center text-decoration-none">
+                            <li class="fa-brands fa-twitter text-secondary "></li>
+                        </a>
+                        <a href="#" class="contact-social-icon rounded-3 d-flex align-items-center justify-content-center text-decoration-none">
+                            <li class="fa-brands fa-github text-secondary "></li>
+                        </a>
+                        <a href="#" class="contact-social-icon rounded-3 d-flex align-items-center justify-content-center text-decoration-none">
+                            <li class="fa-brands fa-dribbble text-secondary "></li>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-top py-4 text-center">
+                    <p class="text-secondary small mb-1">&copy; 2025 Clarity. All rights reserved.</p>
+                    <span class="text-secondary small mb-0 d-inline">Made with <li class="fa-solid fa-heart orange d-inline"></li> for amazing experiences</span>
+                </div>
+            </div>
+        </footer>
         </div>
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
